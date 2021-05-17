@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/2021-05-17-git-no-r/",
+    "title": "git no R",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Professor Robaina",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-17",
+    "categories": [],
+    "contents": "\nPrimeiro Passo\nCrie uma conta gratuita no Github\n\n\n\nFigure 1: Github\n\n\n\nSegundo Passo\nFaça o download do GIT clicando aqui\nTerceiro Passo\nBaixe o Pacote Usethis e ative.\ninstall.packages(\"usethis\")\nlibrary(usethis)\nQuarto Passo - ATENÇÃO\nVá ao console do RStudio e cadastre no Git seu nome, e email.\nLembre-se que o e-mail deve ser o mesmo do seu cadastro no Github.\nusethis::use_git_config(user.name = \"SEU NOME\", \n            user.email = \"SEU E-MAIL CADASTRADO\") \nDeu pau?\nTente no GIT\nNo Git:\n$ git config --global user.name \"SEU NOME\"\n$ git config --global user.email SEU E-MAIL\n\n\n\n",
+    "preview": "posts/2021-05-17-git-no-r/git.png",
+    "last_modified": "2021-05-17T09:24:58-03:00",
+    "input_file": "git-no-r.utf8.md"
+  }
+]

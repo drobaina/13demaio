@@ -21,45 +21,12 @@ knitr::include_graphics("repositorio.png")
 # Segundo passo
 
 Copiar o nome do repositório criado
+
 <center>
-```{r echo=FALSE, out.width = '50%'}
+```{r echo=FALSE, out.width = '80%'}
 knitr::include_graphics("nomerepositorio.png")
 ```
 </center>
-
-# Terceiro Passo
-
-Ir no RStudio e criar um novo projeto
-<center>
-```{r echo=FALSE, out.width = '50%'}
-knitr::include_graphics("novoprojeto.png")
-```
-</center>
-
-Marcar o projeto como versão de controle
-
-<center>
-```{r echo=FALSE, out.width = '50%'}
-knitr::include_graphics("versaodecontrole.png")
-```
-</center>
-
-Acionar o GIT 
-
-<center>
-```{r echo=FALSE, out.width = '50%'}
-knitr::include_graphics("git.png")
-```
-</center>
-
-E depois colar o nome do diretório criado no Github
-
-<center>
-```{r echo=FALSE, out.width = '50%'}
-knitr::include_graphics("colargit.png")
-```
-</center>
-
 
 # Segundo Passo - outra opção
 
@@ -82,7 +49,7 @@ Clique o número referente ao
 
 Depois reiniciar
 
-#### For sure
+#### For sure - qualquer coisa parecida
 
 Agora "chame" o Github
 
@@ -94,25 +61,86 @@ Marque que não tem o ssh e para criar o repositório
 
 
 
-# Segundo Passo - mais uma opção
 
-Você já possui um repositório e que incrementá-lo?
 
-Então utilize a função
+
+# Terceiro Passo
+
+Ir no RStudio e criar um novo projeto
+
+
+<center>
+```{r echo=FALSE, out.width = '50%'}
+knitr::include_graphics("novoprojeto.png")
+```
+</center>
+
+Marcar o projeto como versão de controle
+
+
+<center>
+```{r echo=FALSE, out.width = '50%'}
+knitr::include_graphics("versaodecontrole.png")
+```
+</center>
+
+
+Acionar o GIT 
+
+
+<center>
+```{r echo=FALSE, out.width = '50%'}
+knitr::include_graphics("git.png")
+```
+</center>
+
+
+E depois colar o nome do diretório criado no Github
+
+
+<center>
+```{r echo=FALSE, out.width = '50%'}
+knitr::include_graphics("colargit.png")
+```
+</center>
+
+
+# Quarto Passo
+
+
+Instalar o pacote Distill e chamá-lo 
 
 ```
-usethis::create_from_github()
+install.packages("distill")
+library(distill)
 ```
 
-### Atenção 
-
-`repo_spec` = repositório que quer trabalhar. Deve estar no formato: "usuario_github/repositorio".
+Depois vá ao console e crie o "objeto" com maior atratividade
 
 
-`destdir` = diretório onde os arquivos serão salvos.
+<center>
+```{r echo=FALSE, out.width = '40%'}
+knitr::include_graphics("create.png")
+```
+</center>
 
 
-`fork = TRUE`, irá fazer o fork do repositório. Só funcionará se o token do GitHub foi configurado corretamente
+Para explorar um pouco mais a ferramenta criarei um website
 
+
+```
+create_website(“ESCOLHA O DIRETÓRIO”, title = “Primeiros passos Distill” ) 
+
+```
+
+Os arquivos relacionados ao site serão "inseridos" dentro do diretório que você criou “ESCOLHA O DIRETÓRIO”.
+
+Mova todos os documentos para o diretório "raiz" e exclua o diretório “ESCOLHA O DIRETÓRIO”.
+
+### Atenção
+
+Abra o arquivo `_site.yml` e mude a linha `output_dir: "_site"` para `output_dir: "docs"`. 
+
+Este passo é fundamental para "carregar" o site no Github. 
 
 

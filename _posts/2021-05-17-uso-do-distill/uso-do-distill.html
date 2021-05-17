@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["colargit.png","git.png","nomerepositorio.png","novoprojeto.png","repositorio.png","uso-do-distill_files/anchor-4.2.2/anchor.min.js","uso-do-distill_files/bowser-1.9.3/bowser.min.js","uso-do-distill_files/distill-2.2.21/template.v2.js","uso-do-distill_files/header-attrs-2.7/header-attrs.js","uso-do-distill_files/jquery-1.11.3/jquery.min.js","uso-do-distill_files/popper-2.6.0/popper.min.js","uso-do-distill_files/tippy-6.2.7/tippy-bundle.umd.min.js","uso-do-distill_files/tippy-6.2.7/tippy-light-border.css","uso-do-distill_files/tippy-6.2.7/tippy.css","uso-do-distill_files/tippy-6.2.7/tippy.umd.min.js","uso-do-distill_files/webcomponents-2.0.0/webcomponents.js","versaodecontrole.png"]}
+  {"type":"character","attributes":{},"value":["colargit.png","create.png","git.png","nomerepositorio.png","novoprojeto.png","repositorio.png","uso-do-distill_files/anchor-4.2.2/anchor.min.js","uso-do-distill_files/bowser-1.9.3/bowser.min.js","uso-do-distill_files/distill-2.2.21/template.v2.js","uso-do-distill_files/header-attrs-2.7/header-attrs.js","uso-do-distill_files/jquery-1.11.3/jquery.min.js","uso-do-distill_files/popper-2.6.0/popper.min.js","uso-do-distill_files/tippy-6.2.7/tippy-bundle.umd.min.js","uso-do-distill_files/tippy-6.2.7/tippy-light-border.css","uso-do-distill_files/tippy-6.2.7/tippy.css","uso-do-distill_files/tippy-6.2.7/tippy.umd.min.js","uso-do-distill_files/webcomponents-2.0.0/webcomponents.js","versaodecontrole.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1480,14 +1480,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </center>
 <h1 id="segundo-passo">Segundo passo</h1>
-Copiar o nome do repositório criado
+<p>Copiar o nome do repositório criado</p>
 <center>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="nomerepositorio.png" width="50%" /></p>
+<p><img src="nomerepositorio.png" width="80%" /></p>
 </div>
 </center>
+<h1 id="segundo-passo---outra-opção">Segundo Passo - outra opção</h1>
+<p>Criar direto no console - sem ter que abrir o Github novamente</p>
+<pre><code>usethis::create_project(&quot;aulas2&quot;) </code></pre>
+<p>Depois “chame” o GIT</p>
+<pre><code>usethis::use_git()</code></pre>
+<p>Clique o número referente ao</p>
+<h4 id="yeah---absolutely">Yeah - Absolutely</h4>
+<p>Depois reiniciar</p>
+<h4 id="for-sure---qualquer-coisa-parecida">For sure - qualquer coisa parecida</h4>
+<p>Agora “chame” o Github</p>
+<pre><code>usethis::use_github()</code></pre>
+<p>Marque que não tem o ssh e para criar o repositório</p>
 <h1 id="terceiro-passo">Terceiro Passo</h1>
-Ir no RStudio e criar um novo projeto
+<p>Ir no RStudio e criar um novo projeto</p>
 <center>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="novoprojeto.png" width="50%" /></p>
@@ -1511,27 +1523,25 @@ Ir no RStudio e criar um novo projeto
 <p><img src="colargit.png" width="50%" /></p>
 </div>
 </center>
-<h1 id="segundo-passo---outra-opção">Segundo Passo - outra opção</h1>
-<p>Criar direto no console - sem ter que abrir o Github novamente</p>
-<pre><code>usethis::create_project(&quot;aulas2&quot;) </code></pre>
-<p>Depois “chame” o GIT</p>
-<pre><code>usethis::use_git()</code></pre>
-<p>Clique o número referente ao</p>
-<h4 id="yeah---absolutely">Yeah - Absolutely</h4>
-<p>Depois reiniciar</p>
-<h4 id="for-sure">For sure</h4>
-<p>Agora “chame” o Github</p>
-<pre><code>usethis::use_github()</code></pre>
-<p>Marque que não tem o ssh e para criar o repositório</p>
-<h1 id="segundo-passo---mais-uma-opção">Segundo Passo - mais uma opção</h1>
-<p>Você já possui um repositório e que incrementá-lo?</p>
-<p>Então utilize a função</p>
-<pre><code>usethis::create_from_github()</code></pre>
+<h1 id="quarto-passo">Quarto Passo</h1>
+<p>Instalar o pacote Distill e chamá-lo</p>
+<pre><code>install.packages(&quot;distill&quot;)
+library(distill)</code></pre>
+<p>Depois vá ao console e crie o “objeto” com maior atratividade</p>
+<center>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="create.png" width="40%" /></p>
+</div>
+</center>
+<p>Para explorar um pouco mais a ferramenta criarei um website</p>
+<pre><code>create_website(“ESCOLHA O DIRETÓRIO”, title = “Primeiros passos Distill” ) 
+</code></pre>
+<p>Os arquivos relacionados ao site serão “inseridos” dentro do diretório que você criou “ESCOLHA O DIRETÓRIO”.</p>
+<p>Mova todos os documentos para o diretório “raiz” e exclua o diretório “ESCOLHA O DIRETÓRIO”.</p>
 <h3 id="atenção">Atenção</h3>
-<p><code>repo_spec</code> = repositório que quer trabalhar. Deve estar no formato: “usuario_github/repositorio”.</p>
-<p><code>destdir</code> = diretório onde os arquivos serão salvos.</p>
-<p><code>fork = TRUE</code>, irá fazer o fork do repositório. Só funcionará se o token do GitHub foi configurado corretamente</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Abra o arquivo <code>_site.yml</code> e mude a linha <code>output_dir: "_site"</code> para <code>output_dir: "docs"</code>.</p>
+<p>Este passo é fundamental para “carregar” o site no Github.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

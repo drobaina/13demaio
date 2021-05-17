@@ -86,9 +86,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title> Aula de 13 de maio: git no R</title>
+<title> Aula de 13 de maio: Uso do Distill </title>
 
-<meta property="description" itemprop="description" content="Configurando o git no R"/>
+<meta property="description" itemprop="description" content="Usando o Distill"/>
 
 
 <!--  https://schema.org/Article -->
@@ -96,27 +96,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="article:created" itemprop="dateCreated" content="2021-05-17"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content=" Aula de 13 de maio: git no R"/>
+<meta property="og:title" content=" Aula de 13 de maio: Uso do Distill "/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Configurando o git no R"/>
+<meta property="og:description" content="Usando o Distill"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content=" Aula de 13 de maio"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content=" Aula de 13 de maio: git no R"/>
-<meta property="twitter:description" content="Configurando o git no R"/>
+<meta property="twitter:title" content=" Aula de 13 de maio: Uso do Distill "/>
+<meta property="twitter:description" content="Usando o Distill"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","date"]}},"value":[{"type":"character","attributes":{},"value":["git no R"]},{"type":"character","attributes":{},"value":["Configurando o git no R"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["05-17-2021"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","date"]}},"value":[{"type":"character","attributes":{},"value":["Uso do Distill "]},{"type":"character","attributes":{},"value":["Usando o Distill"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["05-17-2021"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["criado.png","generate.png","git-no-r_files/anchor-4.2.2/anchor.min.js","git-no-r_files/bowser-1.9.3/bowser.min.js","git-no-r_files/distill-2.2.21/template.v2.js","git-no-r_files/header-attrs-2.7/header-attrs.js","git-no-r_files/jquery-1.11.3/jquery.min.js","git-no-r_files/popper-2.6.0/popper.min.js","git-no-r_files/tippy-6.2.7/tippy-bundle.umd.min.js","git-no-r_files/tippy-6.2.7/tippy-light-border.css","git-no-r_files/tippy-6.2.7/tippy.css","git-no-r_files/tippy-6.2.7/tippy.umd.min.js","git-no-r_files/webcomponents-2.0.0/webcomponents.js","git.png","token.png"]}
+  {"type":"character","attributes":{},"value":["colargit.png","git.png","nomerepositorio.png","novoprojeto.png","repositorio.png","uso-do-distill_files/anchor-4.2.2/anchor.min.js","uso-do-distill_files/bowser-1.9.3/bowser.min.js","uso-do-distill_files/distill-2.2.21/template.v2.js","uso-do-distill_files/header-attrs-2.7/header-attrs.js","uso-do-distill_files/jquery-1.11.3/jquery.min.js","uso-do-distill_files/popper-2.6.0/popper.min.js","uso-do-distill_files/tippy-6.2.7/tippy-bundle.umd.min.js","uso-do-distill_files/tippy-6.2.7/tippy-light-border.css","uso-do-distill_files/tippy-6.2.7/tippy.css","uso-do-distill_files/tippy-6.2.7/tippy.umd.min.js","uso-do-distill_files/webcomponents-2.0.0/webcomponents.js","versaodecontrole.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2061,7 +2061,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"git no R","description":"Configurando o git no R","authors":[],"publishedDate":"2021-05-17T00:00:00.000+00:00"}
+{"title":"Uso do Distill ","description":"Usando o Distill","authors":[],"publishedDate":"2021-05-17T00:00:00.000+00:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2084,77 +2084,74 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>git no R</h1>
+<h1>Uso do Distill</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Configurando o git no R</p></p>
+<p><p>Usando o Distill</p></p>
 </div>
 
 
 <div class="d-article">
-<h1 id="primeiro-passo">Primeiro Passo</h1>
-<p>Crie uma conta gratuita no Github</p>
+<h1 id="primeiro-passo">Primeiro passo</h1>
+<p>Criar o repositório no Github.</p>
+<center>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure"><span id="fig:git"></span>
-<img src="git.png" alt="Github" width="100%" />
-<p class="caption">
-Figure 1: Github
-</p>
+<p><img src="repositorio.png" width="50%" /></p>
 </div>
+</center>
+<h1 id="segundo-passo">Segundo passo</h1>
+Copiar o nome do repositório criado
+<center>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="nomerepositorio.png" width="50%" /></p>
 </div>
-<h1 id="segundo-passo">Segundo Passo</h1>
-<p><a href="https://git-scm.com/downloads">Faça o download do GIT clicando aqui</a></p>
+</center>
 <h1 id="terceiro-passo">Terceiro Passo</h1>
-<p>Baixe o Pacote Usethis e ative.</p>
-<pre><code>install.packages(&quot;usethis&quot;)
-library(usethis)</code></pre>
-<h1 id="quarto-passo---atenção">Quarto Passo - ATENÇÃO</h1>
-<p>Vá ao console do RStudio e cadastre no Git seu nome, e email.</p>
-<p>Lembre-se que o e-mail deve ser o mesmo do seu cadastro no Github.</p>
-<pre><code>usethis::use_git_config(user.name = &quot;SEU NOME&quot;, 
-            user.email = &quot;SEU E-MAIL CADASTRADO&quot;) </code></pre>
-<h3 id="deu-pau">Deu pau?</h3>
-<p>Tente no GIT</p>
-<p>No Git:</p>
-<pre><code>$ git config --global user.name &quot;SEU NOME&quot;
-$ git config --global user.email SEU E-MAIL</code></pre>
-<h1 id="quinto-passo">Quinto Passo</h1>
-<p>Configurar seu RStudio com os dados do seu Github.</p>
-<p>Crie um token no Github através do comando</p>
-<pre><code>usethis::create_github_token()</code></pre>
-<p>Renomeie</p>
+Ir no RStudio e criar um novo projeto
+<center>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure"><span id="fig:token"></span>
-<img src="token.png" alt="Token" width="100%" />
-<p class="caption">
-Figure 2: Token
-</p>
+<p><img src="novoprojeto.png" width="50%" /></p>
 </div>
-</div>
-<p>E depois clique em Generate Token no final da página</p>
+</center>
+<p>Marcar o projeto como versão de controle</p>
+<center>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure"><span id="fig:generate"></span>
-<img src="generate.png" alt="Generate Token" width="100%" />
-<p class="caption">
-Figure 3: Generate Token
-</p>
+<p><img src="versaodecontrole.png" width="50%" /></p>
 </div>
-</div>
-<p>Clique em copiar, para copiar seu Token</p>
+</center>
+<p>Acionar o GIT</p>
+<center>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure"><span id="fig:criado"></span>
-<img src="criado.png" alt="Novo Token " width="100%" />
-<p class="caption">
-Figure 4: Novo Token
-</p>
+<p><img src="git.png" width="50%" /></p>
 </div>
+</center>
+<p>E depois colar o nome do diretório criado no Github</p>
+<center>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="colargit.png" width="50%" /></p>
 </div>
-<p>Agora você deve inserir a chave copiada</p>
-<pre><code>usethis::edit_r_environ()</code></pre>
-<p>Abrirá o arquivo .Renviron e você vai digitar a chave em</p>
-<pre><code>GITHUB_PAT =</code></pre>
-<p>Depois salvar e começar a usar!</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+</center>
+<h1 id="segundo-passo---outra-opção">Segundo Passo - outra opção</h1>
+<p>Criar direto no console - sem ter que abrir o Github novamente</p>
+<pre><code>usethis::create_project(&quot;aulas2&quot;) </code></pre>
+<p>Depois “chame” o GIT</p>
+<pre><code>usethis::use_git()</code></pre>
+<p>Clique o número referente ao</p>
+<h4 id="yeah---absolutely">Yeah - Absolutely</h4>
+<p>Depois reiniciar</p>
+<h4 id="for-sure">For sure</h4>
+<p>Agora “chame” o Github</p>
+<pre><code>usethis::use_github()</code></pre>
+<p>Marque que não tem o ssh e para criar o repositório</p>
+<h1 id="segundo-passo---mais-uma-opção">Segundo Passo - mais uma opção</h1>
+<p>Você já possui um repositório e que incrementá-lo?</p>
+<p>Então utilize a função</p>
+<pre><code>usethis::create_from_github()</code></pre>
+<h3 id="atenção">Atenção</h3>
+<p><code>repo_spec</code> = repositório que quer trabalhar. Deve estar no formato: “usuario_github/repositorio”.</p>
+<p><code>destdir</code> = diretório onde os arquivos serão salvos.</p>
+<p><code>fork = TRUE</code>, irá fazer o fork do repositório. Só funcionará se o token do GitHub foi configurado corretamente</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

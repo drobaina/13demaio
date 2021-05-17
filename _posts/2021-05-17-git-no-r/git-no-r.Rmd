@@ -1,19 +1,12 @@
 ---
 title: "git no R"
 description: |
-  A short description of the post.
-author:
-  - name: Professor Robaina
-date: 05-17-2021
+  Configurando o git no R
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 # Primeiro Passo
 
@@ -87,5 +80,20 @@ Clique em copiar, para copiar seu Token
 ```{r criado, echo=FALSE, fig.cap="Novo Token ", out.width = '100%'}
 knitr::include_graphics("criado.png")
 ```
+
+Agora você deve inserir a chave copiada 
+
+```
+usethis::edit_r_environ()
+```
+
+Abrirá o arquivo .Renviron e você vai digitar a chave em 
+
+```
+GITHUB_PAT =
+```
+
+Depois salvar e começar a usar! 
+
 
 
